@@ -19,23 +19,23 @@ public class EmployeeListController {
     }
 
     @PostMapping("/add")
-    public EmployeeEntity addEmployee(@RequestBody EmployeeEntity employee){
+    public EmployeeEntity addEmployee(@RequestBody EmployeeEntity employee) {
         return employeeServiceAsList.addEmployee(employee);
     }
 
     @GetMapping("/all")
-    public List<EmployeeEntity> findAllEmployee(){
+    public List<EmployeeEntity> findAllEmployee() {
         return employeeServiceAsList.getAllEmployee();
     }
 
     @PutMapping("/update/{id}")
-    public EmployeeEntity updateEmployee(@PathVariable Long id,@RequestBody EmployeeEntity employee){
+    public EmployeeEntity updateEmployee(@PathVariable Long id, @RequestBody EmployeeEntity employee) {
         return employeeServiceAsList.updateEmployee(id, employee);
     }
 
     @DeleteMapping("/delete/{id}")
-    public String deleteEmployee(@PathVariable Long id){
-        if(employeeServiceAsList.deleteEmployee(id)){
+    public String deleteEmployee(@PathVariable Long id) {
+        if (employeeServiceAsList.deleteEmployee(id)) {
             return "Employee deleted successfully";
         }
         return "Employee not found";

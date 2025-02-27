@@ -5,6 +5,7 @@ import com.capgemini.employeepayrollapplication.service.EmployeeService;
 import jakarta.validation.Valid;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
+import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
@@ -18,17 +19,17 @@ public class EmployeeController {
     private EmployeeService employeeService;
 
     @GetMapping      //home page
-    public String welcome(){
+    public String welcome() {
         return "Welcome to Employee Payroll App";
     }
 
     @GetMapping("/all")    //get list of all employees
-    public List<EmployeeEntity> getAllEmployees(){
+    public List<EmployeeEntity> getAllEmployees() {
         return employeeService.getAllEmployee();
     }
 
     @GetMapping("/{id}")    //get employees by id
-    public Optional<EmployeeEntity> getEmployeeById(@PathVariable Long id){
+    public Optional<EmployeeEntity> getEmployeeById(@PathVariable Long id) {
         return employeeService.getEmployeeById(id);
     }
 
@@ -47,10 +48,11 @@ public class EmployeeController {
     }
 
     @DeleteMapping("/delete/{id}")
-    public String deleteEmployee(@PathVariable Long id){
-        if(employeeService.deleteEmployee(id)){
+    public String deleteEmployee(@PathVariable Long id) {
+        if (employeeService.deleteEmployee(id)) {
             return "Employee deleted successfully";
         }
         return "Employee Not Found";
     }
+
 }

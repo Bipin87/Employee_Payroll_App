@@ -14,14 +14,14 @@ public class EmployeeServiceAsList {
     Long id = 1L;
 
     //method to get all employees
-    public List<EmployeeEntity> getAllEmployee(){
+    public List<EmployeeEntity> getAllEmployee() {
         return employeeList;
     }
 
     //method to find employee by id
-    public EmployeeEntity getEmployeeById(Long id){
-        for(EmployeeEntity employee : employeeList){
-            if(employee.getId().equals(id)){
+    public EmployeeEntity getEmployeeById(Long id) {
+        for (EmployeeEntity employee : employeeList) {
+            if (employee.getId().equals(id)) {
                 return employee;
             }
         }
@@ -29,16 +29,16 @@ public class EmployeeServiceAsList {
     }
 
     //method to add new employee
-    public EmployeeEntity addEmployee(EmployeeEntity employee){
+    public EmployeeEntity addEmployee(EmployeeEntity employee) {
         employeeList.add(employee);
         employee.setId(id++);
         return employee;
     }
 
     //method to update employees details
-    public EmployeeEntity updateEmployee(Long id, EmployeeEntity employee){
-        for(EmployeeEntity employee1 : employeeList){
-            if(employee1.getId().equals(id)){
+    public EmployeeEntity updateEmployee(Long id, EmployeeEntity employee) {
+        for (EmployeeEntity employee1 : employeeList) {
+            if (employee1.getId().equals(id)) {
                 employee1.setName(employee.getName());
                 employee1.setDepartment(employee.getDepartment());
                 employee1.setSalary(employee.getSalary());
@@ -49,9 +49,9 @@ public class EmployeeServiceAsList {
     }
 
     //method to delete employee
-    public boolean deleteEmployee(Long id){
-        for(EmployeeEntity employee1 : employeeList){
-            if(employee1.getId().equals(id)){
+    public boolean deleteEmployee(Long id) {
+        for (EmployeeEntity employee1 : employeeList) {
+            if (employee1.getId().equals(id)) {
                 employeeList.remove(employee1);
                 return true;
             }
