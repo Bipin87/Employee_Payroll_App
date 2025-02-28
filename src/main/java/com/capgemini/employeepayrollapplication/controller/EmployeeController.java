@@ -4,6 +4,7 @@ import com.capgemini.employeepayrollapplication.entities.EmployeeEntity;
 import com.capgemini.employeepayrollapplication.service.EmployeeService;
 import jakarta.validation.Valid;
 import lombok.extern.slf4j.Slf4j;
+import org.springframework.validation.annotation.Validated;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -12,6 +13,7 @@ import java.util.List;
 import java.util.Optional;
 
 @RestController
+@Validated
 @RequestMapping("/employee")
 @Slf4j
 public class EmployeeController {
@@ -45,7 +47,7 @@ public class EmployeeController {
     }
 
     @PostMapping("/add")
-    public EmployeeEntity addNewEmployee(@RequestBody EmployeeEntity employee) {
+    public EmployeeEntity addNewEmployee(@Valid @RequestBody EmployeeEntity employee) {
         log.info("Adding new employee: {}", employee);
         EmployeeEntity savedEmployee = employeeService.saveEmployee(employee);
         log.info("Employee added successfully with ID: {}", savedEmployee.getId());
@@ -54,7 +56,7 @@ public class EmployeeController {
 
     @PutMapping("/update/details/{id}")
     public ResponseEntity<EmployeeEntity> updateEmployeeDetails(
-            @PathVariable Long id, @Valid @RequestBody EmployeeEntity updatedEmployee) {
+            @Valid @PathVariable Long id,@RequestBody EmployeeEntity updatedEmployee) {
         log.info("Updating details of employee with ID: {}", id);
         EmployeeEntity employee = employeeService.updateEmployee(id, updatedEmployee);
         log.info("Details of employee updated: {}", employee);
