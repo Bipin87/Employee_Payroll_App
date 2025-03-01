@@ -1,7 +1,10 @@
 package com.capgemini.employeepayrollapplication.entities;
 
 import jakarta.persistence.*;
+import jakarta.validation.constraints.DecimalMin;
+import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.NotNull;
+import jakarta.validation.constraints.Pattern;
 import lombok.Data;
 import lombok.Getter;
 import lombok.Setter;
@@ -18,13 +21,16 @@ public class EmployeeEntity {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    @NotNull(message = "This field can't be null")
+    @NotBlank(message = "Name is required and cannot be empty") // Ensures non-null & not empty
+    @Pattern(regexp = "^[A-Z]{1}[a-zA-Z\\s]{2,}$", message = "Employee name not valid")
     private String name;
 
     @NotNull(message = "This field can't be null")
     private String department;
 
-    private Double salary; // Changed from `double` to `Double`
+    @DecimalMin(message = "Salary should be more than 500", value = "500")
+    @NotNull
+    private Double salary;
 
     // Default constructor required by JPA
     public EmployeeEntity() {

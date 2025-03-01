@@ -1,260 +1,29 @@
-2025-02-28 14:44:53 INFO  [main] c.c.e.EmployeePayrollApplication - Starting EmployeePayrollApplication using Java 23.0.1 with PID 16596 (E:\EmployeePayrollApplication\target\classes started by bs410 in E:\EmployeePayrollApplication)
-2025-02-28 14:44:53 DEBUG [main] c.c.e.EmployeePayrollApplication - Running with Spring Boot v3.2.2, Spring v6.1.3
-2025-02-28 14:44:53 INFO  [main] c.c.e.EmployeePayrollApplication - No active profile set, falling back to 1 default profile: "default"
-2025-02-28 14:44:55 INFO  [main] o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2025-02-28 14:44:55 INFO  [main] o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 109 ms. Found 1 JPA repository interface.
-2025-02-28 14:44:57 INFO  [main] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
-2025-02-28 14:44:57 INFO  [main] o.a.catalina.core.StandardService - Starting service [Tomcat]
-2025-02-28 14:44:57 INFO  [main] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.18]
-2025-02-28 14:44:57 INFO  [main] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
-2025-02-28 14:44:57 INFO  [main] o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 3266 ms
-2025-02-28 14:44:57 INFO  [main] o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
-2025-02-28 14:44:57 INFO  [main] org.hibernate.Version - HHH000412: Hibernate ORM core version 6.4.1.Final
-2025-02-28 14:44:58 INFO  [main] o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
-2025-02-28 14:44:58 INFO  [main] o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
-2025-02-28 14:44:58 INFO  [main] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
-2025-02-28 14:44:59 INFO  [main] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@5112b7
-2025-02-28 14:44:59 INFO  [main] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
-2025-02-28 14:44:59 WARN  [main] org.hibernate.orm.deprecation - HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
-2025-02-28 14:44:59 WARN  [main] org.hibernate.orm.deprecation - HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
-2025-02-28 14:45:00 INFO  [main] o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2025-02-28 14:45:00 INFO  [main] o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
-2025-02-28 14:45:01 WARN  [main] o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2025-02-28 14:45:02 WARN  [main] o.s.b.a.t.ThymeleafAutoConfiguration$DefaultTemplateResolverConfiguration - Cannot find template location: classpath:/templates/ (please add some templates, check your Thymeleaf configuration, or set spring.thymeleaf.check-template-location=false)
-2025-02-28 14:45:02 INFO  [main] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path ''
-2025-02-28 14:45:02 INFO  [main] c.c.e.EmployeePayrollApplication - Started EmployeePayrollApplication in 9.385 seconds (process running for 10.432)
-2025-02-28 14:51:16 INFO  [SpringApplicationShutdownHook] o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
-2025-02-28 14:51:16 INFO  [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
-2025-02-28 14:51:16 INFO  [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
-2025-02-28 15:14:57 INFO  [main] c.c.e.EmployeePayrollApplication - Starting EmployeePayrollApplication using Java 23.0.1 with PID 10580 (E:\EmployeePayrollApplication\target\classes started by bs410 in E:\EmployeePayrollApplication)
-2025-02-28 15:14:57 DEBUG [main] c.c.e.EmployeePayrollApplication - Running with Spring Boot v3.2.2, Spring v6.1.3
-2025-02-28 15:14:57 INFO  [main] c.c.e.EmployeePayrollApplication - No active profile set, falling back to 1 default profile: "default"
-2025-02-28 15:14:58 INFO  [main] o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2025-02-28 15:14:58 INFO  [main] o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 67 ms. Found 1 JPA repository interface.
-2025-02-28 15:14:59 INFO  [main] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
-2025-02-28 15:14:59 INFO  [main] o.a.catalina.core.StandardService - Starting service [Tomcat]
-2025-02-28 15:14:59 INFO  [main] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.18]
-2025-02-28 15:14:59 INFO  [main] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
-2025-02-28 15:14:59 INFO  [main] o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1876 ms
-2025-02-28 15:14:59 INFO  [main] o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
-2025-02-28 15:14:59 INFO  [main] org.hibernate.Version - HHH000412: Hibernate ORM core version 6.4.1.Final
-2025-02-28 15:14:59 INFO  [main] o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
-2025-02-28 15:14:59 INFO  [main] o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
-2025-02-28 15:15:00 INFO  [main] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
-2025-02-28 15:15:00 INFO  [main] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@308e87a1
-2025-02-28 15:15:00 INFO  [main] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
-2025-02-28 15:15:00 WARN  [main] org.hibernate.orm.deprecation - HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
-2025-02-28 15:15:00 WARN  [main] org.hibernate.orm.deprecation - HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
-2025-02-28 15:15:01 INFO  [main] o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2025-02-28 15:15:01 INFO  [main] o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
-2025-02-28 15:15:01 WARN  [main] o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2025-02-28 15:15:02 WARN  [main] o.s.b.a.t.ThymeleafAutoConfiguration$DefaultTemplateResolverConfiguration - Cannot find template location: classpath:/templates/ (please add some templates, check your Thymeleaf configuration, or set spring.thymeleaf.check-template-location=false)
-2025-02-28 15:15:02 INFO  [main] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path ''
-2025-02-28 15:15:02 INFO  [main] c.c.e.EmployeePayrollApplication - Started EmployeePayrollApplication in 6.181 seconds (process running for 6.96)
-2025-02-28 15:15:02 INFO  [main] c.c.e.EmployeePayrollApplication - Employee Payroll App Started in null environment
-2025-02-28 15:28:13 INFO  [SpringApplicationShutdownHook] o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
-2025-02-28 15:28:13 INFO  [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
-2025-02-28 15:28:13 INFO  [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
-2025-02-28 15:45:27 INFO  [main] c.c.e.EmployeePayrollApplication - Starting EmployeePayrollApplication using Java 23.0.1 with PID 13452 (E:\EmployeePayrollApplication\target\classes started by bs410 in E:\EmployeePayrollApplication)
-2025-02-28 15:45:27 DEBUG [main] c.c.e.EmployeePayrollApplication - Running with Spring Boot v3.2.2, Spring v6.1.3
-2025-02-28 15:45:27 INFO  [main] c.c.e.EmployeePayrollApplication - No active profile set, falling back to 1 default profile: "default"
-2025-02-28 15:45:28 INFO  [main] o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2025-02-28 15:45:28 INFO  [main] o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 60 ms. Found 1 JPA repository interface.
-2025-02-28 15:45:29 INFO  [main] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
-2025-02-28 15:45:29 INFO  [main] o.a.catalina.core.StandardService - Starting service [Tomcat]
-2025-02-28 15:45:29 INFO  [main] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.18]
-2025-02-28 15:45:29 INFO  [main] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
-2025-02-28 15:45:29 INFO  [main] o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2060 ms
-2025-02-28 15:45:29 INFO  [main] o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
-2025-02-28 15:45:29 INFO  [main] org.hibernate.Version - HHH000412: Hibernate ORM core version 6.4.1.Final
-2025-02-28 15:45:29 INFO  [main] o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
-2025-02-28 15:45:30 INFO  [main] o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
-2025-02-28 15:45:30 INFO  [main] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
-2025-02-28 15:45:30 INFO  [main] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@14be750c
-2025-02-28 15:45:30 INFO  [main] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
-2025-02-28 15:45:30 WARN  [main] org.hibernate.orm.deprecation - HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
-2025-02-28 15:45:30 WARN  [main] org.hibernate.orm.deprecation - HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
-2025-02-28 15:45:31 INFO  [main] o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2025-02-28 15:45:31 INFO  [main] o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
-2025-02-28 15:45:32 WARN  [main] o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2025-02-28 15:45:32 WARN  [main] o.s.b.a.t.ThymeleafAutoConfiguration$DefaultTemplateResolverConfiguration - Cannot find template location: classpath:/templates/ (please add some templates, check your Thymeleaf configuration, or set spring.thymeleaf.check-template-location=false)
-2025-02-28 15:45:32 INFO  [main] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path ''
-2025-02-28 15:45:32 INFO  [main] c.c.e.EmployeePayrollApplication - Started EmployeePayrollApplication in 6.267 seconds (process running for 6.902)
-2025-02-28 15:45:32 INFO  [main] c.c.e.EmployeePayrollApplication - Employee Payroll App Started in null environment
-2025-02-28 15:50:06 INFO  [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
-2025-02-28 15:50:07 INFO  [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
-2025-02-28 15:50:07 INFO  [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet - Completed initialization in 4 ms
-2025-02-28 15:52:02 INFO  [http-nio-8080-exec-6] c.c.e.controller.EmployeeController - Adding new employee: EmployeeEntity(id=null, name=bipin, department=CSE-AIML, salary=67432.0)
-2025-02-28 15:52:02 INFO  [http-nio-8080-exec-6] c.c.e.controller.EmployeeController - Employee added successfully with ID: 1
-2025-02-28 15:53:01 INFO  [http-nio-8080-exec-7] c.c.e.controller.EmployeeController - Adding new employee: EmployeeEntity(id=null, name=Durgesh Kushwaha, department=AIML, salary=43000.0)
-2025-02-28 15:53:01 INFO  [http-nio-8080-exec-7] c.c.e.controller.EmployeeController - Employee added successfully with ID: 2
-2025-02-28 15:53:31 INFO  [http-nio-8080-exec-8] c.c.e.controller.EmployeeController - Adding new employee: EmployeeEntity(id=null, name=Aryan, department=IT, salary=76273.0)
-2025-02-28 15:53:31 INFO  [http-nio-8080-exec-8] c.c.e.controller.EmployeeController - Employee added successfully with ID: 3
-2025-02-28 15:54:12 INFO  [http-nio-8080-exec-9] c.c.e.controller.EmployeeController - Adding new employee: EmployeeEntity(id=null, name=Deepraj, department=IT, salary=200000.0)
-2025-02-28 15:54:12 INFO  [http-nio-8080-exec-9] c.c.e.controller.EmployeeController - Employee added successfully with ID: 4
-2025-02-28 15:54:52 INFO  [http-nio-8080-exec-10] c.c.e.controller.EmployeeController - Adding new employee: EmployeeEntity(id=null, name=Om Tiwari, department=IT, salary=65532.0)
-2025-02-28 15:54:52 INFO  [http-nio-8080-exec-10] c.c.e.controller.EmployeeController - Employee added successfully with ID: 5
-2025-02-28 15:59:55 INFO  [SpringApplicationShutdownHook] o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
-2025-02-28 15:59:55 INFO  [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
-2025-02-28 15:59:55 INFO  [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
-2025-02-28 16:09:16 INFO  [main] c.c.e.EmployeePayrollApplication - Starting EmployeePayrollApplication using Java 23.0.1 with PID 11860 (E:\EmployeePayrollApplication\target\classes started by bs410 in E:\EmployeePayrollApplication)
-2025-02-28 16:09:16 DEBUG [main] c.c.e.EmployeePayrollApplication - Running with Spring Boot v3.2.2, Spring v6.1.3
-2025-02-28 16:09:16 INFO  [main] c.c.e.EmployeePayrollApplication - No active profile set, falling back to 1 default profile: "default"
-2025-02-28 16:09:17 INFO  [main] o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2025-02-28 16:09:17 INFO  [main] o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 68 ms. Found 1 JPA repository interface.
-2025-02-28 16:09:18 INFO  [main] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
-2025-02-28 16:09:18 INFO  [main] o.a.catalina.core.StandardService - Starting service [Tomcat]
-2025-02-28 16:09:18 INFO  [main] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.18]
-2025-02-28 16:09:18 INFO  [main] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
-2025-02-28 16:09:18 INFO  [main] o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1885 ms
-2025-02-28 16:09:18 INFO  [main] o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
-2025-02-28 16:09:18 INFO  [main] org.hibernate.Version - HHH000412: Hibernate ORM core version 6.4.1.Final
-2025-02-28 16:09:18 INFO  [main] o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
-2025-02-28 16:09:19 INFO  [main] o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
-2025-02-28 16:09:19 INFO  [main] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
-2025-02-28 16:09:19 INFO  [main] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@3be80ece
-2025-02-28 16:09:19 INFO  [main] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
-2025-02-28 16:09:20 WARN  [main] org.hibernate.orm.deprecation - HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
-2025-02-28 16:09:20 WARN  [main] org.hibernate.orm.deprecation - HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
-2025-02-28 16:09:21 INFO  [main] o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2025-02-28 16:09:21 INFO  [main] o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
-2025-02-28 16:09:21 WARN  [main] o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2025-02-28 16:09:21 WARN  [main] o.s.b.a.t.ThymeleafAutoConfiguration$DefaultTemplateResolverConfiguration - Cannot find template location: classpath:/templates/ (please add some templates, check your Thymeleaf configuration, or set spring.thymeleaf.check-template-location=false)
-2025-02-28 16:09:22 INFO  [main] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path ''
-2025-02-28 16:09:22 INFO  [main] c.c.e.EmployeePayrollApplication - Started EmployeePayrollApplication in 6.223 seconds (process running for 6.882)
-2025-02-28 16:09:22 INFO  [main] c.c.e.EmployeePayrollApplication - Employee Payroll App Started in null environment
-2025-02-28 16:09:28 INFO  [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
-2025-02-28 16:09:28 INFO  [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
-2025-02-28 16:09:28 INFO  [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet - Completed initialization in 2 ms
-2025-02-28 16:09:28 INFO  [http-nio-8080-exec-2] c.c.e.controller.EmployeeController - Fetching employee with ID: 3
-2025-02-28 16:09:28 INFO  [http-nio-8080-exec-2] c.c.e.controller.EmployeeController - Employee found: EmployeeEntity(id=3, name=Aryan, department=IT, salary=76273.0)
-2025-02-28 16:10:01 INFO  [http-nio-8080-exec-3] c.c.e.controller.EmployeeController - Adding new employee: EmployeeEntity(id=null, name=Om Tiwari 231, department=IT, salary=65532.0)
-2025-02-28 16:10:01 INFO  [http-nio-8080-exec-3] c.c.e.controller.EmployeeController - Employee added successfully with ID: 6
-2025-02-28 16:10:13 WARN  [http-nio-8080-exec-4] o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'DELETE' is not supported]
-2025-02-28 16:10:21 WARN  [http-nio-8080-exec-5] o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'DELETE' is not supported]
-2025-02-28 16:11:10 INFO  [http-nio-8080-exec-6] c.c.e.controller.EmployeeController - Adding new employee: EmployeeEntity(id=null, name=Om Tiwari@ 231, department=IT, salary=65532.0)
-2025-02-28 16:11:10 INFO  [http-nio-8080-exec-6] c.c.e.controller.EmployeeController - Employee added successfully with ID: 7
-2025-02-28 16:11:19 INFO  [http-nio-8080-exec-7] c.c.e.controller.EmployeeController - Adding new employee: EmployeeEntity(id=null, name=@#Om Tiwari@ 231, department=IT, salary=65532.0)
-2025-02-28 16:11:19 INFO  [http-nio-8080-exec-7] c.c.e.controller.EmployeeController - Employee added successfully with ID: 8
-2025-02-28 16:16:43 INFO  [SpringApplicationShutdownHook] o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
-2025-02-28 16:16:43 INFO  [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
-2025-02-28 16:16:43 INFO  [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
-2025-02-28 16:17:49 INFO  [main] c.c.e.EmployeePayrollApplication - Starting EmployeePayrollApplication using Java 23.0.1 with PID 12476 (E:\EmployeePayrollApplication\target\classes started by bs410 in E:\EmployeePayrollApplication)
-2025-02-28 16:17:49 DEBUG [main] c.c.e.EmployeePayrollApplication - Running with Spring Boot v3.2.2, Spring v6.1.3
-2025-02-28 16:17:49 INFO  [main] c.c.e.EmployeePayrollApplication - No active profile set, falling back to 1 default profile: "default"
-2025-02-28 16:17:50 INFO  [main] o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2025-02-28 16:17:50 INFO  [main] o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 59 ms. Found 1 JPA repository interface.
-2025-02-28 16:17:51 INFO  [main] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
-2025-02-28 16:17:51 INFO  [main] o.a.catalina.core.StandardService - Starting service [Tomcat]
-2025-02-28 16:17:51 INFO  [main] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.18]
-2025-02-28 16:17:51 INFO  [main] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
-2025-02-28 16:17:51 INFO  [main] o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1793 ms
-2025-02-28 16:17:51 INFO  [main] o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
-2025-02-28 16:17:51 INFO  [main] org.hibernate.Version - HHH000412: Hibernate ORM core version 6.4.1.Final
-2025-02-28 16:17:51 INFO  [main] o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
-2025-02-28 16:17:51 INFO  [main] o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
-2025-02-28 16:17:51 INFO  [main] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
-2025-02-28 16:17:52 INFO  [main] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@66298fe9
-2025-02-28 16:17:52 INFO  [main] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
-2025-02-28 16:17:52 WARN  [main] org.hibernate.orm.deprecation - HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
-2025-02-28 16:17:52 WARN  [main] org.hibernate.orm.deprecation - HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
-2025-02-28 16:17:53 INFO  [main] o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2025-02-28 16:17:53 INFO  [main] o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
-2025-02-28 16:17:53 WARN  [main] o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2025-02-28 16:17:53 WARN  [main] o.s.b.a.t.ThymeleafAutoConfiguration$DefaultTemplateResolverConfiguration - Cannot find template location: classpath:/templates/ (please add some templates, check your Thymeleaf configuration, or set spring.thymeleaf.check-template-location=false)
-2025-02-28 16:17:54 INFO  [main] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path ''
-2025-02-28 16:17:54 INFO  [main] c.c.e.EmployeePayrollApplication - Started EmployeePayrollApplication in 5.513 seconds (process running for 6.146)
-2025-02-28 16:17:54 INFO  [main] c.c.e.EmployeePayrollApplication - Employee Payroll App Started in null environment
-2025-02-28 16:18:00 INFO  [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
-2025-02-28 16:18:00 INFO  [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
-2025-02-28 16:18:00 INFO  [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet - Completed initialization in 2 ms
-2025-02-28 16:18:00 INFO  [http-nio-8080-exec-2] c.c.e.controller.EmployeeController - Adding new employee: EmployeeEntity(id=null, name=@#Om Tiwari@ 231, department=IT, salary=65532.0)
-2025-02-28 16:18:00 INFO  [http-nio-8080-exec-2] c.c.e.controller.EmployeeController - Employee added successfully with ID: 9
-2025-02-28 16:21:51 INFO  [SpringApplicationShutdownHook] o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
-2025-02-28 16:21:51 INFO  [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
-2025-02-28 16:21:51 INFO  [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
-2025-02-28 16:21:58 INFO  [main] c.c.e.EmployeePayrollApplication - Starting EmployeePayrollApplication using Java 23.0.1 with PID 23880 (E:\EmployeePayrollApplication\target\classes started by bs410 in E:\EmployeePayrollApplication)
-2025-02-28 16:21:58 DEBUG [main] c.c.e.EmployeePayrollApplication - Running with Spring Boot v3.2.2, Spring v6.1.3
-2025-02-28 16:21:58 INFO  [main] c.c.e.EmployeePayrollApplication - No active profile set, falling back to 1 default profile: "default"
-2025-02-28 16:21:59 INFO  [main] o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2025-02-28 16:21:59 INFO  [main] o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 84 ms. Found 1 JPA repository interface.
-2025-02-28 16:22:00 INFO  [main] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
-2025-02-28 16:22:00 INFO  [main] o.a.catalina.core.StandardService - Starting service [Tomcat]
-2025-02-28 16:22:00 INFO  [main] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.18]
-2025-02-28 16:22:00 INFO  [main] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
-2025-02-28 16:22:00 INFO  [main] o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2127 ms
-2025-02-28 16:22:00 INFO  [main] o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
-2025-02-28 16:22:00 INFO  [main] org.hibernate.Version - HHH000412: Hibernate ORM core version 6.4.1.Final
-2025-02-28 16:22:00 INFO  [main] o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
-2025-02-28 16:22:01 INFO  [main] o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
-2025-02-28 16:22:01 INFO  [main] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
-2025-02-28 16:22:01 INFO  [main] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@7bb4ed71
-2025-02-28 16:22:01 INFO  [main] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
-2025-02-28 16:22:01 WARN  [main] org.hibernate.orm.deprecation - HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
-2025-02-28 16:22:01 WARN  [main] org.hibernate.orm.deprecation - HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
-2025-02-28 16:22:02 INFO  [main] o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2025-02-28 16:22:02 INFO  [main] o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
-2025-02-28 16:22:03 WARN  [main] o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2025-02-28 16:22:03 WARN  [main] o.s.b.a.t.ThymeleafAutoConfiguration$DefaultTemplateResolverConfiguration - Cannot find template location: classpath:/templates/ (please add some templates, check your Thymeleaf configuration, or set spring.thymeleaf.check-template-location=false)
-2025-02-28 16:22:03 INFO  [main] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path ''
-2025-02-28 16:22:03 INFO  [main] c.c.e.EmployeePayrollApplication - Started EmployeePayrollApplication in 6.531 seconds (process running for 7.254)
-2025-02-28 16:22:03 INFO  [main] c.c.e.EmployeePayrollApplication - Employee Payroll App Started in null environment
-2025-02-28 16:22:30 INFO  [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
-2025-02-28 16:22:30 INFO  [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
-2025-02-28 16:22:30 INFO  [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
-2025-02-28 16:22:30 INFO  [http-nio-8080-exec-2] c.c.e.controller.EmployeeController - Adding new employee: EmployeeEntity(id=null, name=aman, department=Finance, salary=60000.0)
-2025-02-28 16:22:30 INFO  [http-nio-8080-exec-2] c.c.e.controller.EmployeeController - Employee added successfully with ID: 10
-2025-02-28 16:46:03 INFO  [SpringApplicationShutdownHook] o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
-2025-02-28 16:46:03 INFO  [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
-2025-02-28 16:46:03 INFO  [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
-2025-02-28 16:46:09 INFO  [main] c.c.e.EmployeePayrollApplication - Starting EmployeePayrollApplication using Java 23.0.1 with PID 20904 (E:\EmployeePayrollApplication\target\classes started by bs410 in E:\EmployeePayrollApplication)
-2025-02-28 16:46:09 DEBUG [main] c.c.e.EmployeePayrollApplication - Running with Spring Boot v3.2.2, Spring v6.1.3
-2025-02-28 16:46:09 INFO  [main] c.c.e.EmployeePayrollApplication - No active profile set, falling back to 1 default profile: "default"
-2025-02-28 16:46:10 INFO  [main] o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2025-02-28 16:46:10 INFO  [main] o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 67 ms. Found 1 JPA repository interface.
-2025-02-28 16:46:11 INFO  [main] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
-2025-02-28 16:46:11 INFO  [main] o.a.catalina.core.StandardService - Starting service [Tomcat]
-2025-02-28 16:46:11 INFO  [main] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.18]
-2025-02-28 16:46:11 INFO  [main] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
-2025-02-28 16:46:11 INFO  [main] o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1896 ms
-2025-02-28 16:46:11 INFO  [main] o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
-2025-02-28 16:46:11 INFO  [main] org.hibernate.Version - HHH000412: Hibernate ORM core version 6.4.1.Final
-2025-02-28 16:46:11 INFO  [main] o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
-2025-02-28 16:46:12 INFO  [main] o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
-2025-02-28 16:46:12 INFO  [main] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
-2025-02-28 16:46:12 INFO  [main] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@c732e1c
-2025-02-28 16:46:12 INFO  [main] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
-2025-02-28 16:46:12 WARN  [main] org.hibernate.orm.deprecation - HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
-2025-02-28 16:46:12 WARN  [main] org.hibernate.orm.deprecation - HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
-2025-02-28 16:46:13 INFO  [main] o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2025-02-28 16:46:13 INFO  [main] o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
-2025-02-28 16:46:14 WARN  [main] o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2025-02-28 16:46:14 WARN  [main] o.s.b.a.t.ThymeleafAutoConfiguration$DefaultTemplateResolverConfiguration - Cannot find template location: classpath:/templates/ (please add some templates, check your Thymeleaf configuration, or set spring.thymeleaf.check-template-location=false)
-2025-02-28 16:46:14 INFO  [main] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path ''
-2025-02-28 16:46:14 INFO  [main] c.c.e.EmployeePayrollApplication - Started EmployeePayrollApplication in 6.246 seconds (process running for 6.949)
-2025-02-28 16:46:14 INFO  [main] c.c.e.EmployeePayrollApplication - Employee Payroll App Started in null environment
-2025-02-28 16:46:16 INFO  [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
-2025-02-28 16:46:16 INFO  [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
-2025-02-28 16:46:16 INFO  [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
-2025-02-28 16:46:16 INFO  [http-nio-8080-exec-1] c.c.e.controller.EmployeeController - Adding new employee: EmployeeEntity(id=null, name=aman, department=Finance, salary=60000.0)
-2025-02-28 16:46:16 INFO  [http-nio-8080-exec-1] c.c.e.controller.EmployeeController - Employee added successfully with ID: 11
-2025-02-28 16:46:33 INFO  [http-nio-8080-exec-3] c.c.e.controller.EmployeeController - Fetching all employees...
-2025-02-28 16:46:33 INFO  [http-nio-8080-exec-3] c.c.e.controller.EmployeeController - Total employees fetched: 11
-2025-02-28 16:47:48 INFO  [http-nio-8080-exec-5] c.c.e.controller.EmployeeController - Updating details of employee with ID: 1
-2025-02-28 16:47:48 INFO  [http-nio-8080-exec-5] c.c.e.controller.EmployeeController - Details of employee updated: EmployeeEntity(id=1, name=Bipin, department=CSE-AIML, salary=67432.0)
-2025-02-28 16:48:05 INFO  [http-nio-8080-exec-6] c.c.e.controller.EmployeeController - Fetching all employees...
-2025-02-28 16:48:05 INFO  [http-nio-8080-exec-6] c.c.e.controller.EmployeeController - Total employees fetched: 11
-2025-02-28 16:48:34 INFO  [http-nio-8080-exec-7] c.c.e.controller.EmployeeController - Deleting employee with ID: 11
-2025-02-28 16:48:35 INFO  [http-nio-8080-exec-7] c.c.e.controller.EmployeeController - Employee with ID 11 deleted successfully.
-2025-02-28 16:48:40 INFO  [http-nio-8080-exec-8] c.c.e.controller.EmployeeController - Deleting employee with ID: 10
-2025-02-28 16:48:40 INFO  [http-nio-8080-exec-8] c.c.e.controller.EmployeeController - Employee with ID 10 deleted successfully.
-2025-02-28 16:48:45 INFO  [http-nio-8080-exec-9] c.c.e.controller.EmployeeController - Deleting employee with ID: 9
-2025-02-28 16:48:45 INFO  [http-nio-8080-exec-9] c.c.e.controller.EmployeeController - Employee with ID 9 deleted successfully.
-2025-02-28 16:48:49 INFO  [http-nio-8080-exec-10] c.c.e.controller.EmployeeController - Deleting employee with ID: 8
-2025-02-28 16:48:49 INFO  [http-nio-8080-exec-10] c.c.e.controller.EmployeeController - Employee with ID 8 deleted successfully.
-2025-02-28 16:48:53 INFO  [http-nio-8080-exec-2] c.c.e.controller.EmployeeController - Deleting employee with ID: 7
-2025-02-28 16:48:53 INFO  [http-nio-8080-exec-2] c.c.e.controller.EmployeeController - Employee with ID 7 deleted successfully.
-2025-02-28 16:49:03 INFO  [http-nio-8080-exec-1] c.c.e.controller.EmployeeController - Fetching all employees...
-2025-02-28 16:49:03 INFO  [http-nio-8080-exec-1] c.c.e.controller.EmployeeController - Total employees fetched: 6
-2025-02-28 16:49:26 INFO  [http-nio-8080-exec-3] c.c.e.controller.EmployeeController - Deleting employee with ID: 6
-2025-02-28 16:49:26 INFO  [http-nio-8080-exec-3] c.c.e.controller.EmployeeController - Employee with ID 6 deleted successfully.
+2025-03-01 10:13:13 INFO  [main] c.c.e.EmployeePayrollApplication - Starting EmployeePayrollApplication using Java 23.0.1 with PID 15628 (E:\EmployeePayrollApplication\target\classes started by bs410 in E:\EmployeePayrollApplication)
+2025-03-01 10:13:13 DEBUG [main] c.c.e.EmployeePayrollApplication - Running with Spring Boot v3.2.2, Spring v6.1.3
+2025-03-01 10:13:13 INFO  [main] c.c.e.EmployeePayrollApplication - No active profile set, falling back to 1 default profile: "default"
+2025-03-01 10:13:14 INFO  [main] o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-03-01 10:13:14 INFO  [main] o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 69 ms. Found 1 JPA repository interface.
+2025-03-01 10:13:15 INFO  [main] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-03-01 10:13:15 INFO  [main] o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-03-01 10:13:15 INFO  [main] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.18]
+2025-03-01 10:13:15 INFO  [main] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-03-01 10:13:15 INFO  [main] o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1995 ms
+2025-03-01 10:13:15 INFO  [main] o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-03-01 10:13:15 INFO  [main] org.hibernate.Version - HHH000412: Hibernate ORM core version 6.4.1.Final
+2025-03-01 10:13:15 INFO  [main] o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2025-03-01 10:13:16 INFO  [main] o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-03-01 10:13:16 INFO  [main] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-03-01 10:13:16 INFO  [main] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@cec590c
+2025-03-01 10:13:16 INFO  [main] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-03-01 10:13:16 WARN  [main] org.hibernate.orm.deprecation - HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-03-01 10:13:16 WARN  [main] org.hibernate.orm.deprecation - HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2025-03-01 10:13:17 INFO  [main] o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-03-01 10:13:17 INFO  [main] o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-03-01 10:13:18 WARN  [main] o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-03-01 10:13:18 WARN  [main] o.s.b.a.t.ThymeleafAutoConfiguration$DefaultTemplateResolverConfiguration - Cannot find template location: classpath:/templates/ (please add some templates, check your Thymeleaf configuration, or set spring.thymeleaf.check-template-location=false)
+2025-03-01 10:13:18 INFO  [main] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path ''
+2025-03-01 10:13:18 INFO  [main] c.c.e.EmployeePayrollApplication - Started EmployeePayrollApplication in 6.164 seconds (process running for 8.508)
+2025-03-01 10:13:18 INFO  [main] c.c.e.EmployeePayrollApplication - Employee Payroll App Started in null environment
+2025-03-01 10:17:51 INFO  [SpringApplicationShutdownHook] o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-03-01 10:17:51 INFO  [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-03-01 10:17:51 INFO  [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
